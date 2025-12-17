@@ -1,0 +1,99 @@
+/* ===============================
+   Intro Section
+   =============================== */
+
+.intro {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin-bottom: 1.1rem;
+  color: var(--text-main);
+}
+
+.intro a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px dashed transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.intro a:hover {
+  border-bottom: 1px dashed var(--primary);
+  opacity: 0.9;
+}
+
+/* ===============================
+   Career Goals Section
+   =============================== */
+
+.goals {
+  margin: 1.4rem 0;
+  padding-left: 0.2rem;
+}
+
+.goal-item {
+  display: block;
+  margin-bottom: 0.85rem;
+  padding-left: 0.4rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+  position: relative;
+}
+
+.goal-item strong {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.goal-item i {
+  color: var(--primary);
+  margin-right: 10px;
+  font-size: 0.95rem;
+}
+
+/* Subtle hover lift */
+.goal-item:hover {
+  transform: translateX(2px);
+  transition: transform 0.15s ease-in-out;
+}
+
+/* ===============================
+   EDI Commitment Section
+   =============================== */
+
+.edi {
+  margin-top: 1.6rem;
+  padding: 0.9rem 1rem;
+  border-left: 4px solid var(--secondary);
+  background-color: var(--bg-soft);
+  border-radius: 6px;
+  line-height: 1.75;
+  color: var(--text-muted);
+}
+
+.edi strong {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.edi i {
+  color: var(--secondary);
+  margin-right: 8px;
+  font-size: 1rem;
+}
+
+/* ===============================
+   Responsive Tweaks
+   =============================== */
+
+@media (max-width: 768px) {
+  .intro,
+  .goal-item,
+  .edi {
+    font-size: 0.98rem;
+  }
+
+  .edi {
+    padding: 0.8rem;
+  }
+}
