@@ -704,3 +704,79 @@
     height: 140px;
   }
 }
+
+
+/* =========================
+   Floating Social Sidebar
+   ========================= */
+.social-sidebar{
+  position: fixed;
+  top: 95px;              /* below header */
+  right: 18px;
+  width: 320px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ss-card{
+  background: rgba(255,255,255,.96);
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,.06);
+}
+
+.ss-head{
+  padding: 10px 12px;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+
+.ss-body{
+  padding: 10px 12px 12px;
+}
+
+.ss-btn{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-decoration: none !important;
+}
+
+.ss-btn-li{
+  background: #0A66C2;
+  color: #fff !important;
+}
+
+.ss-links{
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.ss-links a{
+  text-decoration: none;
+}
+
+/* Prevent sidebar covering page content on large screens */
+@media (min-width: 992px){
+  #page_container{
+    padding-right: 360px;
+  }
+}
+
+/* Hide sidebar on smaller screens (mobile/tablet) */
+@media (max-width: 991px){
+  .social-sidebar{
+    display: none;
+  }
+}
+
