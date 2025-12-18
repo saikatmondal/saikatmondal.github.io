@@ -97,3 +97,610 @@
     padding: 0.8rem;
   }
 }
+
+/* ===============================
+   Research Paragraph Styling
+   =============================== */
+
+.research-text {
+  font-size: 1.03rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: var(--text-muted);
+}
+
+/* Core emphasis */
+.hl-primary {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.hl-secondary {
+  font-weight: 600;
+  color: #374151; /* slate */
+}
+
+.hl-entity {
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Action phrases */
+.hl-action {
+  font-weight: 600;
+  color: #1f2937;
+  border-bottom: 2px solid rgba(108, 99, 255, 0.25);
+  padding-bottom: 1px;
+}
+
+/* EDI emphasis */
+.hl-edi {
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+/* Subtle hover polish (optional but classy) */
+.hl-primary:hover,
+.hl-action:hover,
+.hl-edi:hover {
+  opacity: 0.9;
+}
+.research-pillars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.2rem 0 1.4rem;
+  padding-left: 0.1rem;
+}
+
+.pillar-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  background-color: #f8fafc;
+  border: 1px solid var(--border-soft);
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.15s ease-in-out;
+}
+
+.pillar-chip i {
+  color: var(--primary);
+  font-size: 0.95rem;
+}
+
+/* Subtle hover polish */
+.pillar-chip:hover {
+  background-color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(17, 24, 39, 0.08);
+}
+
+/* ===============================
+   Teaching Paragraph Styling
+   =============================== */
+
+.teaching-text {
+  font-size: 1.03rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: var(--text-muted);
+}
+
+.teaching-link {
+  color: var(--primary);
+  font-weight: 650;
+  text-decoration: none;
+  border-bottom: 1px dashed transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.teaching-link:hover {
+  border-bottom: 1px dashed var(--primary);
+  opacity: 0.92;
+}
+
+/* Teaching pillars (chips) */
+.teaching-pillars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.2rem 0 1.4rem;
+  padding-left: 0.1rem;
+}
+
+/* Reuse pillar-chip styles if already added for research;
+   keeping here for safety if Teaching appears on its own. */
+.pillar-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  background-color: #f8fafc;
+  border: 1px solid var(--border-soft);
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.15s ease-in-out;
+}
+
+.pillar-chip i {
+  color: var(--primary);
+  font-size: 0.95rem;
+}
+
+.pillar-chip:hover {
+  background-color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(17, 24, 39, 0.08);
+}
+
+/* ===============================
+   Review Section (Paragraph Style)
+   =============================== */
+
+.review-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-main);
+}
+
+.review-title i {
+  color: var(--primary);
+  margin-right: 8px;
+}
+
+.review-text {
+  font-size: 1.02rem;
+  line-height: 1.8;
+  margin-bottom: 0.9rem;
+  color: var(--text-muted);
+}
+
+.review-text strong {
+  color: var(--text-main);
+}
+
+.review-text a {
+  margin-left: 4px;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.review-text a:hover {
+  opacity: 0.85;
+}
+
+.leadership-text {
+  font-size: 1.03rem;
+  line-height: 1.85;
+  margin-bottom: 1rem;
+  color: var(--text-muted);
+}
+
+/* ==========================================
+   Unified Responsive Grid System
+   Works for both Latest News & Projects
+   ========================================== */
+
+/* Safe fallback vars */
+:root{
+  --primary:#6c63ff;
+  --text-main:#111827;
+  --text-muted:#4b5563;
+  --border-soft:rgba(17,24,39,0.10);
+}
+
+/* Section wrapper */
+.sec{
+  margin: 0 0 18px;
+}
+
+/* Header bar: consistent */
+.sec-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:10px 12px;
+  margin: 0.35rem 0 0.9rem;
+  border:1px solid var(--border-soft);
+  border-radius:14px;
+  background:
+    radial-gradient(700px 260px at 10% 0%, rgba(108, 99, 255, 0.12), transparent 55%),
+    #ffffff;
+  box-shadow:0 6px 18px rgba(17,24,39,0.06);
+}
+
+.sec-title{
+  margin:0;
+  font-size:1.28rem;
+  font-weight:800;
+  color:var(--text-main);
+  letter-spacing:-0.15px;
+}
+
+.sec-title i{
+  color:var(--primary);
+  margin-right:6px;
+}
+
+/* CTA button */
+.sec-cta{
+  border-radius:999px;
+  padding:0.5rem 0.9rem;
+  font-size:0.88rem;
+  font-weight:700;
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  white-space:nowrap;
+  box-shadow:0 4px 14px rgba(108,99,255,0.20);
+  transition:transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.sec-cta:hover{
+  transform:translateY(-1px);
+  box-shadow:0 10px 22px rgba(108,99,255,0.26);
+}
+
+/* Fully responsive grid:
+   - 2 columns on desktop
+   - 1 column on mobile
+   - automatically adapts without bootstrap */
+.sec-grid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap:12px;
+}
+
+/* Cards */
+.u-card{
+  border:1px solid var(--border-soft);
+  border-radius:14px;
+  background: linear-gradient(180deg, #ffffff, #fbfcff);
+  box-shadow:0 8px 22px rgba(17,24,39,0.07);
+  transition:transform 0.15s ease, box-shadow 0.15s ease;
+  overflow:hidden;
+}
+
+.u-card:hover{
+  transform:translateY(-2px);
+  box-shadow:0 16px 30px rgba(17,24,39,0.10);
+}
+
+.u-card-body{
+  padding:12px;
+}
+
+/* Common divider */
+.u-divider{
+  height:1px;
+  background:var(--border-soft);
+  margin:10px 0;
+}
+
+/* Date badge (News) */
+.u-badge{
+  display:inline-flex;
+  align-items:center;
+  font-size:0.84rem;
+  font-weight:750;
+  color:var(--text-main);
+  background: rgba(108, 99, 255, 0.10);
+  border:1px solid rgba(108, 99, 255, 0.18);
+  padding:0.28rem 0.55rem;
+  border-radius:999px;
+}
+
+/* Text */
+.u-text{
+  margin:0;
+  font-size:0.97rem;
+  line-height:1.6;
+  color:var(--text-muted);
+  overflow-wrap:anywhere;
+}
+
+.u-text strong{
+  color:var(--text-main);
+}
+
+.u-quote{
+  font-weight:650;
+  color:var(--text-main);
+}
+
+/* Inline links (news + projects footer) */
+.u-link{
+  color:var(--primary);
+  font-weight:700;
+  text-decoration:none;
+  border-bottom:1px dotted transparent;
+  margin-left:6px;
+  transition:all 0.15s ease-in-out;
+  white-space:nowrap;
+}
+
+.u-link:hover{
+  border-bottom:1px dotted var(--primary);
+  opacity:0.92;
+}
+
+.u-link--video{
+  color:#dc2626;
+}
+.u-link--video:hover{
+  border-bottom-color:#dc2626;
+}
+
+/* --------------------------
+   Projects (inside same cards)
+   -------------------------- */
+
+.p-top{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+}
+
+.p-icon{
+  width:46px;
+  height:46px;
+  border-radius:12px;
+  background: rgba(108, 99, 255, 0.10);
+  border:1px solid rgba(108, 99, 255, 0.18);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 auto;
+}
+
+.p-icon i{
+  font-size:1.15rem;
+  color:var(--primary);
+}
+
+.p-title{
+  margin:0;
+  font-size:1.03rem;
+  font-weight:800;
+  color:var(--text-main);
+  letter-spacing:-0.12px;
+}
+
+.p-desc{
+  margin:0.25rem 0 0;
+  font-size:0.95rem;
+  line-height:1.45;
+  color:var(--text-muted);
+  overflow-wrap:anywhere;
+}
+
+/* Smaller tags */
+.p-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  margin-top:8px;
+}
+
+.p-tag{
+  display:inline-flex;
+  align-items:center;
+  padding:0.18rem 0.5rem;
+  border-radius:6px;
+  background:#f1f5f9;
+  border:1px solid #e2e8f0;
+  color:#475569;
+  font-size:0.72rem;
+  font-weight:600;
+  letter-spacing:0.2px;
+  line-height:1.2;
+}
+
+.p-foot{
+  display:flex;
+  justify-content:flex-end;
+}
+
+/* --------------------------
+   Responsive: full portability
+   -------------------------- */
+@media (max-width: 900px){
+  .sec-grid{
+    grid-template-columns: 1fr; /* 1 column on tablets/smaller */
+  }
+}
+
+@media (max-width: 768px){
+  .sec-head{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+  }
+  .sec-cta{
+    width:100%;
+    justify-content:center;
+  }
+}
+
+@media (max-width: 420px){
+  .sec-title{ font-size:1.18rem; }
+  .sec-cta{ font-size:0.85rem; padding:0.48rem 0.85rem; }
+}
+
+
+/* ===============================
+   My Links – Professional Styling
+   =============================== */
+
+.links-carousel {
+  padding: 6px 0;
+}
+
+/* Individual link card */
+.link-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-card a {
+  width: 140px;
+  height: 120px;
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 6px 16px rgba(17, 24, 39, 0.06);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  text-decoration: none;
+  color: var(--text-main);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.link-card a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(17, 24, 39, 0.12);
+}
+
+/* Icons: small, consistent, academic */
+.link-card i {
+  font-size: 1.6rem;
+  color: var(--primary);
+  opacity: 0.95;
+}
+
+/* Text */
+.link-card span {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+
+/* Subtle brand hints (optional, restrained) */
+.link-card a[aria-label="YouTube"] i {
+  color: #dc2626;
+}
+
+.link-card a[aria-label="LinkedIn"] i {
+  color: #0a66c2;
+}
+
+.link-card a[aria-label="Stack Overflow"] i {
+  color: #f48024;
+}
+
+/* Responsive polish */
+@media (max-width: 768px) {
+  .link-card a {
+    width: 100%;
+    height: 110px;
+  }
+}
+
+/* ===============================
+   Memorial Testimonial – Compact
+   =============================== */
+
+.memorial-card--compact {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #ffffff, #fafafa);
+  border: 1px solid var(--border-soft);
+  box-shadow: 0 8px 20px rgba(17, 24, 39, 0.08);
+}
+
+/* Smaller portrait */
+.memorial-portrait--compact {
+  flex: 0 0 110px;
+  height: 140px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--border-soft);
+  box-shadow: 0 6px 16px rgba(17, 24, 39, 0.14);
+}
+
+.memorial-portrait--compact img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Content spacing */
+.memorial-content--compact {
+  flex: 1;
+}
+
+/* Smaller label */
+.memorial-label--compact {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+
+/* Quote text */
+.memorial-quote--compact {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  font-style: italic;
+  color: var(--text-main);
+}
+
+/* Author */
+.memorial-author--compact {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+/* Years */
+.memorial-years {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* Relation */
+.memorial-relation--compact {
+  margin-top: 2px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .memorial-card--compact {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .memorial-portrait--compact {
+    width: 110px;
+    height: 140px;
+  }
+}
