@@ -797,17 +797,21 @@
 	    </div>
 
 	    <!-- Floating Social Sidebar (Top-Right) -->
+<!-- Floating Social Sidebar (put this near the bottom of the page, before scripts / before </body>) -->
 <aside class="social-sidebar" aria-label="Social sidebar">
+  <!-- LinkedIn -->
   <div class="ss-card">
     <div class="ss-head">
       <i class="fab fa-linkedin"></i> <span>LinkedIn</span>
     </div>
+
     <div class="ss-body">
       <a class="ss-btn ss-btn-li"
          href="https://www.linkedin.com/in/saikatmondalbd/"
          target="_blank" rel="noopener">
         Follow on LinkedIn
       </a>
+
       <div class="ss-links">
         <a href="https://www.linkedin.com/in/saikatmondalbd/recent-activity/all/"
            target="_blank" rel="noopener">
@@ -817,17 +821,20 @@
     </div>
   </div>
 
+  <!-- X (Twitter) -->
   <div class="ss-card">
     <div class="ss-head">
       <i class="fab fa-twitter"></i> <span>Latest on X</span>
     </div>
+
     <div class="ss-body">
       <a class="twitter-timeline"
-         data-height="320"
+         data-height="280"
          data-theme="light"
-         data-chrome="noheader nofooter noborders"
-         href="https://twitter.com/saikatcsebd">
-        Tweets by saikatcsebd
+         data-chrome="noheader nofooter noborders transparent"
+         data-tweet-limit="3"
+         href="https://x.com/saikatcsebd">
+        Posts by @saikatcsebd
       </a>
     </div>
   </div>
@@ -846,9 +853,19 @@
 <script src="js/main.js"></script>
 
 <!-- X (Twitter) embed script MUST be after the timeline HTML -->
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-	</body>
+<!-- If Leven animations delay rendering, this forces X widget to re-scan after load -->
+<script>
+  window.addEventListener('load', function () {
+    if (window.twttr && twttr.widgets) {
+      twttr.widgets.load();
+    }
+  });
+</script>
+
+</body>
+
 
 <!-- Mirrored from lmpixels.com/demo/leven-html-new/light/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Mar 2021 19:10:11 GMT -->
 </html>

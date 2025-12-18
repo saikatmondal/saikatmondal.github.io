@@ -767,3 +767,7 @@
 @media (max-width: 1200px){
   .social-sidebar{ display: none; }
 }
+
+.social-sidebar{
+  z-index: 9999999;
+}
