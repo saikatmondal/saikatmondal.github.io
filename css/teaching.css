@@ -1,8 +1,3 @@
-/* =========================
-   Teaching (Single Column) — Professional, 100% Responsive
-   ========================= */
-
-/* Safe vars */
 :root{
   --primary:#6c63ff;
   --text-main:#111827;
@@ -13,223 +8,215 @@
 
 /* Wrapper */
 .teach-sc{
-  width: 100%;
-  max-width: 980px;          /* looks premium on desktop */
-  margin: 0 auto;            /* centered */
-  padding: 0 12px;           /* mobile breathing */
-  color: var(--text-main);
+  width:100%;
+  max-width:980px;
+  margin:0 auto;
+  padding:0 12px;
+  color:var(--text-main);
 }
 
 /* Header */
 .teach-sc__head{
-  border: 1px solid var(--border-soft);
-  border-radius: 18px;
-  padding: 16px 16px 14px;
-  background:
-    radial-gradient(900px 320px at 12% 0%, rgba(108,99,255,0.12), transparent 60%),
-    #ffffff;
-  box-shadow: 0 10px 26px rgba(17,24,39,0.08);
-  margin-bottom: 14px;
+  border:1px solid var(--border-soft);
+  border-radius:18px;
+  padding:16px 16px 14px;
+  background: radial-gradient(900px 320px at 12% 0%, rgba(108,99,255,0.12), transparent 60%), #fff;
+  box-shadow:0 10px 26px rgba(17,24,39,0.08);
+  margin-bottom:14px;
 }
-
 .teach-sc__title{
-  margin: 0 0 8px 0;
-  font-size: 1.55rem;
-  font-weight: 950;
-  letter-spacing: -0.25px;
+  margin:0 0 8px;
+  font-size:1.55rem;
+  font-weight:950;
+  letter-spacing:-0.25px;
   display:flex;
   align-items:center;
   gap:10px;
 }
-
-.teach-sc__title i{ color: var(--primary); }
-
+.teach-sc__title i{ color:var(--primary); }
 .teach-sc__lead{
   margin:0;
-  color: var(--text-muted);
-  font-size: 1.02rem;
-  line-height: 1.75;
+  color:var(--text-muted);
+  font-size:1.02rem;
+  line-height:1.75;
 }
 
-/* Organization block */
-.teach-sc__org{
-  margin-top: 14px;
-}
-
-/* Org heading */
+/* Org header */
+.teach-sc__org{ margin-top:14px; }
 .teach-sc__orghead{
-  border: 1px solid var(--border-soft);
-  border-radius: 16px;
-  padding: 12px 14px;
-  background: #ffffff;
-  box-shadow: 0 8px 20px rgba(17,24,39,0.06);
+  border:1px solid var(--border-soft);
+  border-radius:16px;
+  padding:12px 14px;
+  background:#fff;
+  box-shadow:0 8px 20px rgba(17,24,39,0.06);
 }
-
 .teach-sc__orgtitle{
-  margin: 0;
-  font-size: 1.18rem;
-  font-weight: 950;
-  letter-spacing: -0.15px;
+  margin:0;
+  font-size:1.18rem;
+  font-weight:950;
+  letter-spacing:-0.15px;
 }
-
 .teach-sc__orgsub{
-  margin: 6px 0 0;
-  color: var(--text-muted);
-  font-size: 0.96rem;
-  line-height: 1.6;
+  margin:6px 0 0;
+  color:var(--text-muted);
+  font-size:0.96rem;
+  line-height:1.6;
 }
 
-/* Link */
+/* Links */
 .teach-sc__link{
-  color: var(--primary);
-  font-weight: 850;
-  text-decoration: none;
-  border-bottom: 1px dotted transparent;
-  transition: opacity .15s ease, border-color .15s ease;
-  white-space: nowrap;
+  color:var(--primary);
+  font-weight:900;
+  text-decoration:none;
+  border-bottom:2px solid rgba(108,99,255,0.18);
+  padding-bottom:1px;
+  transition:opacity .15s ease, border-color .15s ease;
 }
-
 .teach-sc__link:hover{
-  border-bottom-color: var(--primary);
-  opacity: 0.92;
+  border-bottom-color:rgba(108,99,255,0.35);
+  opacity:0.92;
 }
 
-/* Cards (single column naturally) */
+/* Cards */
 .teach-sc__card{
-  margin-top: 12px;
-  border: 1px solid var(--border-soft);
-  border-radius: 18px;
-  background: linear-gradient(180deg, #ffffff, #fbfcff);
-  box-shadow: 0 10px 24px rgba(17,24,39,0.08);
-  padding: 14px 14px 10px;
+  margin-top:12px;
+  border:1px solid var(--border-soft);
+  border-radius:18px;
+  background:linear-gradient(180deg,#fff,#fbfcff);
+  box-shadow:0 10px 24px rgba(17,24,39,0.08);
+  padding:14px 14px 10px;
 }
-
-/* Card header */
 .teach-sc__cardhead{
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid rgba(17,24,39,0.08);
+  padding-bottom:10px;
+  margin-bottom:10px;
+  border-bottom:1px solid rgba(17,24,39,0.08);
 }
-
 .teach-sc__role{
-  margin: 0 0 8px;
-  font-size: 1.05rem;
-  font-weight: 950;
-  letter-spacing: -0.1px;
+  margin:0 0 8px;
+  font-size:1.05rem;
+  font-weight:950;
+  letter-spacing:-0.1px;
 }
 
-/* Chips wrap naturally on small screens */
+/* Chips */
 .teach-sc__chips{
   display:flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  flex-wrap:wrap;
+  gap:8px;
 }
-
 .teach-sc__chip{
   display:inline-flex;
   align-items:center;
-  gap: 7px;
-  padding: 6px 10px;
-  border-radius: 999px;
-  background: rgba(108,99,255,0.08);
-  border: 1px solid rgba(108,99,255,0.14);
-  color: #1f2937;
-  font-size: 0.88rem;
-  font-weight: 850;
+  gap:7px;
+  padding:6px 10px;
+  border-radius:999px;
+  background:rgba(108,99,255,0.08);
+  border:1px solid rgba(108,99,255,0.14);
+  color:#1f2937;
+  font-size:0.88rem;
+  font-weight:850;
 }
+.teach-sc__chip i{ color:var(--primary); }
 
-.teach-sc__chip i{ color: var(--primary); }
-
-/* List */
+/* Main list */
 .teach-sc__list{
-  margin: 0;
-  padding-left: 18px;
-  color: var(--text-muted);
-  font-size: 0.99rem;
-  line-height: 1.7;
+  margin:0;
+  padding-left:18px;
+  color:var(--text-muted);
+  font-size:0.99rem;
+  line-height:1.7;
+}
+.teach-sc__list li{ margin-bottom:10px; }
+.teach-sc__list li strong{ color:var(--text-main); }
+
+/* Sublist styling (compact, clean) */
+.teach-sc__sublist{
+  margin:8px 0 0 0;
+  padding-left:18px;
+  display:grid;
+  gap:6px;
+  list-style: disc;
+  color:var(--text-muted);
+}
+.teach-sc__sublist li{
+  margin:0;
+  line-height:1.55;
 }
 
-.teach-sc__list li{
-  margin-bottom: 10px;
-}
-
-.teach-sc__list li strong{
-  color: var(--text-main);
-}
-
-/* Callouts for long lines (students/courses) */
+/* Callout blocks for long/important items */
 .teach-sc__callout{
-  background: var(--bg-soft);
-  border: 1px dashed rgba(17,24,39,0.12);
-  border-radius: 14px;
-  padding: 10px 10px;
+  background:var(--bg-soft);
+  border:1px dashed rgba(17,24,39,0.12);
+  border-radius:14px;
+  padding:10px 10px;
 }
 
-/* Mini supervised-project list */
+/* Underlined focus text (subtle, professional) */
+.u-focus{
+  font-weight:900;
+  color:var(--text-main);
+  border-bottom:2px solid rgba(108,99,255,0.25);
+  padding-bottom:1px;
+}
+
+/* Mini project list inside mentoring */
 .teach-sc__mini{
-  margin-top: 10px;
-  display: grid;
-  gap: 8px;
+  margin-top:10px;
+  display:grid;
+  gap:8px;
 }
-
 .teach-sc__miniitem{
-  padding-left: 12px;
-  position: relative;
+  padding-left:12px;
+  position:relative;
 }
-
 .teach-sc__miniitem::before{
   content:"";
   position:absolute;
   left:0;
-  top: 9px;
-  width: 6px;
-  height: 6px;
-  border-radius: 999px;
-  background: rgba(108,99,255,0.55);
+  top:9px;
+  width:6px;
+  height:6px;
+  border-radius:999px;
+  background:rgba(108,99,255,0.55);
 }
-
 .teach-sc__miniinfo{
-  color: #6b7280;
-  font-weight: 750;
-  margin-left: 6px;
-  font-size: 0.94rem;
+  color:#6b7280;
+  font-weight:750;
+  margin-left:6px;
+  font-size:0.94rem;
 }
-
 .teach-sc__badge{
   display:inline-flex;
   align-items:center;
-  margin-left: 8px;
-  padding: 3px 8px;
-  border-radius: 999px;
-  font-size: 0.75rem;
-  font-weight: 950;
-  background: rgba(255,90,60,0.14);
-  border: 1px solid rgba(255,90,60,0.22);
-  color: #b42318;
-  white-space: nowrap;
+  margin-left:8px;
+  padding:3px 8px;
+  border-radius:999px;
+  font-size:0.75rem;
+  font-weight:950;
+  background:rgba(255,90,60,0.14);
+  border:1px solid rgba(255,90,60,0.22);
+  color:#b42318;
+  white-space:nowrap;
 }
-
-/* Note inside mentoring callout */
 .teach-sc__note{
-  margin: 10px 0 0;
-  padding-top: 10px;
-  border-top: 1px solid rgba(108,99,255,0.12);
-  color: #4b5563;
-  font-weight: 650;
-  line-height: 1.6;
+  margin:10px 0 0;
+  padding-top:10px;
+  border-top:1px solid rgba(108,99,255,0.12);
+  color:#4b5563;
+  font-weight:650;
+  line-height:1.6;
 }
 
-/* 100% responsive typography tweaks */
-@media (max-width: 768px){
-  .teach-sc{ padding: 0 10px; }
-  .teach-sc__title{ font-size: 1.35rem; }
-  .teach-sc__lead{ font-size: 0.98rem; }
-  .teach-sc__orgtitle{ font-size: 1.08rem; }
+/* Responsive tweaks */
+@media (max-width:768px){
+  .teach-sc{ padding:0 10px; }
+  .teach-sc__title{ font-size:1.35rem; }
+  .teach-sc__lead{ font-size:0.98rem; }
+  .teach-sc__orgtitle{ font-size:1.08rem; }
 }
-
-@media (max-width: 420px){
-  .teach-sc__head{ padding: 14px 12px 12px; }
-  .teach-sc__card{ padding: 12px 12px 8px; }
-  .teach-sc__chip{ font-size: 0.84rem; padding: 6px 9px; }
-  .teach-sc__list{ font-size: 0.95rem; }
+@media (max-width:420px){
+  .teach-sc__head{ padding:14px 12px 12px; }
+  .teach-sc__card{ padding:12px 12px 8px; }
+  .teach-sc__chip{ font-size:0.84rem; padding:6px 9px; }
+  .teach-sc__list{ font-size:0.95rem; }
 }
