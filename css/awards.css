@@ -1,0 +1,234 @@
+/* =========================
+   AWARDS — Atelier (Borderless, Transparent)
+   Major Awards: orange vertical-flow highlight
+   Other Awards: neutral, unchanged layout
+   ========================= */
+
+:root{
+  --aw-ink:#0b1220;
+  --aw-muted:#556070;
+  --aw-paper:transparent;
+
+  /* link accent stays */
+  --aw-accent:#6c63ff;
+
+  /* Major award tone (soft orange) */
+  --aw-major:#f4a261;
+  --aw-major-soft:rgba(244,162,97,0.14);
+}
+
+/* =========================
+   Container
+   ========================= */
+.aw-atelier{
+  width:100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 12px;
+  color: var(--aw-ink);
+}
+
+/* Section spacing */
+.aw-atelier__section{
+  margin: 8px 0 18px;
+}
+
+/* =========================
+   Header (unchanged)
+   ========================= */
+.aw-atelier__head{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap: 12px;
+  margin: 10px 0 10px;
+}
+
+.aw-atelier__headLeft{ min-width:0; }
+
+.aw-atelier__kicker{
+  display:inline-flex;
+  align-items:center;
+  gap: 10px;
+  font-size: 0.86rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(11,18,32,0.70);
+}
+
+.aw-atelier__kicker i{
+  color: var(--aw-accent);
+}
+
+.aw-atelier__hairline{
+  height: 1px;
+  flex: 1;
+  background: rgba(11,18,32,0.14);
+  border-radius: 999px;
+  transform: translateY(-6px);
+}
+
+/* =========================
+   Shared layout
+   ========================= */
+.aw-atelier__stack,
+.aw-atelier__group{
+  display:grid;
+  gap: 8px;
+}
+
+/* =========================
+   MAJOR AWARDS (orange flow)
+   ========================= */
+.aw-atelier__item{
+  display:flex;
+  gap: 10px;
+  padding: 10px 12px;
+  background:
+    linear-gradient(
+      180deg,
+      var(--aw-major-soft),
+      rgba(255,255,255,0)
+    );
+}
+
+/* Year chip – borderless, tinted */
+.aw-atelier__item .aw-atelier__year{
+  background: rgba(244,162,97,0.22);
+  color: rgba(11,18,32,0.92);
+}
+
+/* Title underline recolored only for Major Awards */
+.aw-atelier__item .aw-atelier__title{
+  background: rgba(244,162,97,0.18);
+  text-decoration-color: rgba(244,162,97,0.75);
+}
+
+/* =========================
+   OTHER AWARDS (neutral, borderless)
+   ========================= */
+.aw-atelier__entry{
+  display:flex;
+  gap: 10px;
+  padding: 10px 12px;
+  background: transparent;
+}
+
+/* =========================
+   Meta (Year)
+   ========================= */
+.aw-atelier__meta{
+  flex: 0 0 auto;
+  align-self: flex-start;
+}
+
+.aw-atelier__year{
+  display:inline-flex;
+  justify-content:center;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: rgba(11,18,32,0.08);
+  font-weight: 800;
+  font-size: 0.90rem;
+  color: rgba(11,18,32,0.88);
+}
+
+/* =========================
+   Body
+   ========================= */
+.aw-atelier__body{
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+/* =========================
+   Title & Text
+   ========================= */
+.aw-atelier__name{
+  margin: 0;
+  font-size: 1.00rem;
+  font-weight: 850;
+  line-height: 1.26;
+}
+
+/* Base title style */
+.aw-atelier__title{
+  display:inline;
+  padding: 0.05em 0.14em;
+  border-radius: 6px;
+  background: rgba(11,18,32,0.05);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(11,18,32,0.40);
+}
+
+.aw-atelier__sub{
+  font-size: 0.94rem;
+  font-weight: 700;
+  color: rgba(11,18,32,0.72);
+  margin-left: 6px;
+}
+
+/* =========================
+   Description
+   ========================= */
+.aw-atelier__bullets{
+  margin: 6px 0 0;
+  padding-left: 16px;
+  color: var(--aw-muted);
+  font-size: 0.95rem;
+  line-height: 1.58;
+}
+
+.aw-atelier__bullets li{ margin: 0; }
+
+.aw-atelier__bullets li::marker{
+  color: rgba(11,18,32,0.35);
+}
+
+/* =========================
+   Links
+   ========================= */
+.aw-atelier__link{
+  color: var(--aw-accent);
+  font-weight: 750;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(108,99,255,0.30);
+  padding-bottom: 1px;
+  margin-left: 6px;
+  white-space: nowrap;
+}
+
+.aw-atelier__link:hover{
+  border-bottom-color: rgba(108,99,255,0.55);
+}
+
+/* =========================
+   Mobile
+   ========================= */
+@media (max-width: 780px){
+  .aw-atelier__hairline{
+    display:none;
+  }
+
+  .aw-atelier__item,
+  .aw-atelier__entry{
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .aw-atelier__year{
+    width: fit-content;
+  }
+}
+
+/* =========================
+   Accessibility
+   ========================= */
+@media (prefers-reduced-motion: reduce){
+  *{
+    scroll-behavior:auto !important;
+  }
+}
