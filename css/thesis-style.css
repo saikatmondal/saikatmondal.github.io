@@ -45,16 +45,25 @@ body {
 }
 
 .logo {
-  width: 64px;
-  height: 64px;
-  display: grid;
-  place-items: center;
-  border-radius: 20px;
-  background: linear-gradient(135deg, var(--gold), #ff9f1c);
-  color: #08111f;
-  font-weight: 900;
-  letter-spacing: -1px;
-  box-shadow: 0 14px 35px rgba(247,201,72,0.25);
+  width: 78px;
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22px;
+  background: #ffffff;
+  overflow: hidden;
+  border: 2px solid rgba(247,201,72,0.65);
+  box-shadow:
+    0 0 22px rgba(247,201,72,0.28),
+    0 14px 35px rgba(0,0,0,0.28);
+}
+
+.logo img {
+  width: 82%;
+  height: 82%;
+  object-fit: contain;
+  display: block;
 }
 
 .brand h2 {
@@ -347,6 +356,8 @@ footer {
     position: relative;
     width: 100%;
     height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
   }
 
   .content {
@@ -370,6 +381,16 @@ footer {
 }
 
 @media (max-width: 700px) {
+  .sidebar {
+    padding: 22px 16px;
+  }
+
+  .logo {
+    width: 66px;
+    height: 66px;
+    border-radius: 18px;
+  }
+
   nav,
   .metrics,
   .pillar-grid,
@@ -380,6 +401,10 @@ footer {
 
   h1 {
     letter-spacing: -1px;
+  }
+
+  .subtitle {
+    font-size: 18px;
   }
 
   .panel,
