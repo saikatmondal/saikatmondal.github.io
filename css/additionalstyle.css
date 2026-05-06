@@ -1255,3 +1255,64 @@
     min-height: 190px;
   }
 }
+
+
+/* new addition */
+
+/* ===============================
+   Latest News: tighter space use
+   Paste at END of additionalstyle.css
+   =============================== */
+
+.sec {
+  margin: 0 0 12px !important;
+}
+
+.sec-head {
+  padding: 8px 10px !important;
+  margin: 0.25rem 0 0.65rem !important;
+  border-radius: 12px !important;
+}
+
+.sec-title {
+  font-size: 1.16rem !important;
+}
+
+.sec-cta {
+  padding: 0.42rem 0.75rem !important;
+  font-size: 0.82rem !important;
+}
+
+.sec-grid {
+  gap: 9px !important;
+}
+
+.u-card {
+  border-radius: 12px !important;
+  box-shadow: 0 6px 16px rgba(17,24,39,0.06) !important;
+}
+
+.u-card-body {
+  padding: 10px 11px !important;
+}
+
+.u-divider {
+  margin: 7px 0 8px !important;
+}
+
+.u-badge {
+  font-size: 0.76rem !important;
+  padding: 0.22rem 0.48rem !important;
+}
+
+.u-text {
+  font-size: 0.9rem !important;
+  line-height: 1.48 !important;
+  margin: 0 !important;
+}
+
+.u-link {
+  margin-left: 4px !important;
+  white-space: normal !important;
+}
+
